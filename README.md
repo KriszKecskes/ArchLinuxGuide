@@ -14,5 +14,19 @@ sudo systemctl enable --now cups.service
 
 Ha USB-s a nyomtatód, akkor az `usbutils` telepítése után az `lsusb` parancsot futtatva már látdnod kell a listában a nyomtatódat.
 
+## CUE és BIN fájlok ISO-ba konvertálása:
+
+Szükség van hozzá a `bchunk` nevű alkalmazásra.
+
+```bash
+sudo pacman -S bchunk
+```
+
+Aztán példa:
+
+```bash
+bchunk disc1.bin disc1.cue disc1
+```
+A fenti példa egy disc1 nevű iso-t készít a bin és a cue fájlokból.
 
 
