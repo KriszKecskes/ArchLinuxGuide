@@ -38,5 +38,23 @@ sudo mv libglib* disabled-libraries
 sudo mv libgio* disabled-libraries
 sudo mv libgmodule* disabled-libraries
 ```
+## Több Git-es fiók kezelése egy config-gal
+
+```bash
+# GitHub
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/public_key1
+    IdentitiesOnly yes
+
+# GitHub2
+Host github2.com
+    HostName github2.com
+    User git
+    IdentityFile ~/.ssh/public_key2
+    IdentitiesOnly yes
+
+```
 
 
