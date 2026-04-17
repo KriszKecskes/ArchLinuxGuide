@@ -57,4 +57,10 @@ Host github2.com
 
 ```
 
+## Android Emulátor - Error response hiba eltűntetése:
+
+```bash
+gsettings set org.gnome.mutter check-alive-timeout 0
+```
+
 
